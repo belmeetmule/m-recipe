@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.m-brand{
+    font-family: fantasy !important;
+    font-weight: 900;
+    color: rgba(160, 29, 29, 0.573);
+
+}
+
+.recipe-image{
+    width: 300px;
+    
+}
+
+.recipe-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#recipesList{
+    list-style: none;
+}
+.recipe-card{
+    width: 300px;
+    height: 400px;
+}
