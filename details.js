@@ -69,8 +69,7 @@ const getRecipe = async (id) => {
 
       // grab ingrdients element
       const ingTable = document.getElementById('ingredients');
-      console.log('ing', data.ingredients)
-      console.log('the table', ingTable )
+      
     
       data.ingredients.map(ingredient =>{
         const tblRow = document.createElement('tr');
