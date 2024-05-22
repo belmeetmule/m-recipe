@@ -33,6 +33,8 @@
 
 > The M-recipe is a simple recipe webiste built for fun and educational purposes. The app allows you to browse different recipes and see the details once user found her chice.The user can also filter recipes.
 
+<img src="screenshot.png">
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
