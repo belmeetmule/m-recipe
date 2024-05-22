@@ -33,28 +33,28 @@ const getRecipe = async (id) => {
           
           <div class="d-flex gap-1 mb-auto flex-column"> 
             <div class="d-flex ">
-              <p class="mb-1 mx-2 fw-semibold text-secondary-emphasis"> Serving: &nbsp;</serving>
+              <p class="mb-1 mx-2 fw-semibold text-secondary-emphasis"> <i class="bi bi-people"></i> Serving: &nbsp;</serving>
               <p class="mb-1"> ${data.servings} </p>
             </div>
             <div class="d-flex mx-2">
-              <p class="mb-1 fw-semibold text-secondary-emphasis"> Prep time: &nbsp; </serving>
+              <p class="mb-1 fw-semibold text-secondary-emphasis"> <i class="bi bi-alarm"></i>&nbsp; Prep time: &nbsp; </serving>
               <p class="mb-1"> ${data.prepTimeMinutes} Minutes </p>
             </div>
             <div class="d-flex mx-2">
-              <p class="mb-1 fw-semibold text-secondary-emphasis"> Cook time: &nbsp; </serving>
+              <p class="mb-1 fw-semibold text-secondary-emphasis"> <i class="bi bi-alarm"></i>&nbsp; Cook time: &nbsp; </serving>
               <p class="mb-1"> ${data.cookTimeMinutes} Minutes</p>
             </div>
             <div class="d-flex mx-2">
-              <p class="mb-1 fw-semibold text-secondary-emphasis"> Difficulty: &nbsp; </serving>
+              <p class="mb-1 fw-semibold text-secondary-emphasis"> <i class="bi bi-water"></i> Difficulty: &nbsp; </serving>
               <p class="mb-1"> ${data.difficulty}</p>
             </div>
             <div class="d-flex mx-2">
-              <p class="mb-1 fw-semibold text-secondary-emphasis"> Cuisine: &nbsp; </serving>
+              <p class="mb-1 fw-semibold text-secondary-emphasis"> <i class="bi bi-flag"></i> Cuisine: &nbsp; </serving>
               <p class="mb-1"> ${data.cuisine}</p>
             </div>
 
             <div class="d-flex mx-2 mt-2">
-              <p class="mb-1 fw-semibold text-secondary-emphasis"> Rating: &nbsp; </serving>
+              <p class="mb-1 fw-semibold text-secondary-emphasis"> <i class="bi bi-stars"></i> Rating: &nbsp; </serving>
               <p class="mb-1"> ${data.rating}</p>
             </div>
           </div>
