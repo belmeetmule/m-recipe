@@ -77,15 +77,15 @@ function displayRecipes(recipe) {
           </div
           <div class="d-flex flex-row g-2 mb-auto"> 
             <div class="d-flex flex-col">
-              <p class="mb-1 fw-semibold text-secondary-emphasis"> Serving: &nbsp; </serving>
+              <p class="mb-1 fw-semibold text-secondary-emphasis"> <i class="bi bi-people"></i> Serving: &nbsp; </serving>
               <p class="mb-1"> ${recipe.servings} </p>
             </div>
             <div class="d-flex flex-col">
-              <p class="mb-1 fw-semibold text-secondary-emphasis"> Prep time: &nbsp; </serving>
+              <p class="mb-1 fw-semibold text-secondary-emphasis"> <i class="bi bi-alarm"></i> Prep time: &nbsp; </serving>
               <p class="mb-1"> ${recipe.prepTimeMinutes} Minutes </p>
             </div>
             <div class="d-flex flex-col">
-              <p class="fw-semibold text-secondary-emphasis"> Cook time: &nbsp;</serving>
+              <p class="fw-semibold text-secondary-emphasis"> <i class="bi bi-alarm"></i> Cook time: &nbsp;</serving>
               <p> ${recipe.cookTimeMinutes} Minutes</p>
             </div>
           </div>
