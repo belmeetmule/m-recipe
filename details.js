@@ -75,6 +75,7 @@ const getRecipe = async (id) => {
       data.ingredients.map(ingredient =>{
         const tblRow = document.createElement('tr');
         tblRow.classList.add('border-bottom');
+        tblRow.classList.add('p-3');
         tblRow.innerHTML = ingredient;
         ingTable.appendChild(tblRow);
       })

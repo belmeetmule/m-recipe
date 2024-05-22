@@ -69,7 +69,7 @@ function displayRecipes(recipe) {
       recipeCard.classList.add('h-100');
       recipeCard.innerHTML = `
       
-      <img src=${recipe.image} class="card-img-top" alt="${recipe.title}">
+      <img src=${recipe.image} class="card-img-top" alt="${recipe.title}" onclick="viewDetails(${recipe.id}) ">
       <div class="card-body  d-flex flex-column">
           <div class="d-flex justify-content-between"> 
             <h5 class="card-title">${recipe.name}</h5>
@@ -112,7 +112,7 @@ const displayAllRecipes = () => {
   
   document.addEventListener('DOMContentLoaded', () => {
     // Call the function to get the recipe details
-    //getRecipeDetails();
+  
 
   document.querySelector('#searchForm').addEventListener('submit', filterRecipes);
 
