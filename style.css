@@ -89,6 +89,18 @@
     font-weight: 900;
 }
 
+#bottom-arrow{
+    background-color: brown;
+    color: wheat;
+}
+
+#bottom-arrow:hover{
+    background-color: wheat;
+    color: brown;
+}
+
+
+
 @media screen and (max-width: 768px){
     #top-panel{
         display: flex;
