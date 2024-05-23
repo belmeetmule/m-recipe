@@ -89,6 +89,7 @@
     font-weight: 900;
 }
 
+
 #bottom-arrow{
     background-color: brown;
     color: wheat;
@@ -137,5 +138,11 @@
     #ingredients{
         margin-left: 15px;
         padding: 5px;
+    }
+
+    #bottom-btn-cont{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 }
