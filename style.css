@@ -105,6 +105,16 @@ h1#recipe-count {
     color: brown;
 }
 
+footer.footer.mt-auto.py-3.bg-light {
+    background: #74bbf9b0 !important;
+    margin-top: 10px;
+}
+
+button.btn.btn-outline-success {
+    border-color: brown;
+    color: brown;
+}
+
 
 @media screen and (max-width: 768px){
    
