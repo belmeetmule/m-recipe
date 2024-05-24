@@ -115,6 +115,10 @@ button.btn.btn-outline-success {
     color: brown;
 }
 
+footer a{
+    text-decoration: none;
+}
+
 
 
 @media screen and (max-width: 768px){
