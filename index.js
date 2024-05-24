@@ -48,6 +48,7 @@ const viewDetails = (recipeId) => {
             document.querySelector('input[type="search"]').focus();
 
             document.getElementById('recipe-count').textContent = `Found: (${filteredRecipes.length})`;
+            document.getElementById('recipe-count').style.marginTop='65px';
 
             filteredRecipes.forEach(recipe => {
                 displayRecipes(recipe); // Function to display the recipes
