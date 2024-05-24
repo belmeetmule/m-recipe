@@ -28,8 +28,13 @@
 }
 
 #grid{
-    margin-top: 50px;
+    margin-top: 20px;
     row-gap: 15px;
+}
+
+h1#recipe-count {
+    margin-top: 60px;
+    padding-left: 10px;
 }
 
 
@@ -101,8 +106,8 @@
 }
 
 
-
 @media screen and (max-width: 768px){
+   
     #top-panel{
         display: flex;
         flex-direction: column-reverse;
@@ -145,4 +150,9 @@
         flex-direction: row;
         flex-wrap: nowrap;
     }
+
+    h1#recipe-count{
+        margin-top: 100px !important;
+    }
+
 }
