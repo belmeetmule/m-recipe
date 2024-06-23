@@ -48,13 +48,39 @@ const viewDetails = (recipeId) => {
             document.querySelector('input[type="search"]').focus();
 
             document.getElementById('recipe-count').textContent = `Found: (${filteredRecipes.length})`;
-            document.getElementById('recipe-count').style.marginTop='65px';
+            document.getElementById('recipe-count').style.marginTop='55px';
 
             filteredRecipes.forEach(recipe => {
                 displayRecipes(recipe); // Function to display the recipes
             });
     });
     }
+
+    const filterByTag = (e) => {
+        let tag = e.target.id;
+        console.log('tag', tag);
+        if (tag === 'all') {
+            displayAllRecipes();
+            return;
+        }
+        globalData.then(data => {
+            let recipes = data.recipes;
+            let filteredRecipes = recipes.filter(recipe =>
+            recipe.mealType.includes(tag)
+            );
+               
+            // Clear the existing recipes on the page
+            document.querySelector('.row').innerHTML = '';
+            document.querySelector('input[type="search"]').focus();
+
+            document.getElementById('recipe-count').textContent = `Found: (${filteredRecipes.length})`;
+            document.getElementById('recipe-count').style.marginTop='55px';
+
+            filteredRecipes.forEach(recipe => {
+                displayRecipes(recipe); // Function to display the recipes
+            });
+    }
+    )}
 
       
 
@@ -113,7 +139,14 @@ const displayAllRecipes = () => {
   
   document.addEventListener('DOMContentLoaded', () => {
     // Call the function to get the recipe details
-  
+
+    // Attach event listner to all filter buttons
+    const filterButtons = document.querySelector('#filter-tgs').querySelectorAll('button');
+    console.log('filterButtons', filterButtons);
+    filterButtons.forEach(button => {
+        console.log('button', button.id);
+        button.addEventListener('click', filterByTag);
+    });
 
   document.querySelector('#searchForm').addEventListener('submit', filterRecipes);
 
