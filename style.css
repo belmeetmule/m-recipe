@@ -41,6 +41,19 @@ h1#recipe-count {
 #recipesList{
     list-style: none;
 }
+
+#filter-tgs{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+#filter-tgs btn{
+    background-color: brown;
+    color: wheat;
+    width: auto;
+    padding: 3px;
+}
 .recipe-card{
     width: 300px;
     height: 400px;
