@@ -99,7 +99,7 @@ h1#recipe-count {
 
 .btn:hover{
     background-color: brown;
-    color: wheat;
+    color: wheat !important;
 }
 
 #page-title{
@@ -116,6 +116,12 @@ h1#recipe-count {
 #bottom-arrow:hover{
     background-color: wheat;
     color: brown;
+}
+
+#filter-tgs button{
+    color: brown;
+    outline-color: brown;
+    border: 1px solid brown;
 }
 
 footer.footer.mt-auto.py-3.bg-light {
